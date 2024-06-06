@@ -1,0 +1,7 @@
+# ignora el wireframe y todos los archivos de texto
+*.txt
+
+# ignora una carpeta que uso de ejemplos 
+Ejemplos
+
+node_modules
