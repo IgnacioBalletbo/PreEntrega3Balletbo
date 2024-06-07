@@ -17,40 +17,52 @@
 <body id="fondo">
 
 <header>
-    <section id="fotoh1">
+    <section class="fotoh1">
         <img src="../multimedia/images/screenshot_58.png" alt="foto de fondo con humo de colores">
     </section>
-    <section id="linksh1">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">
+    <section class="nav-container"> <!-- hice la apertura de la sección que contendrá los links y lo identifiqué con su id correspondiente para su posterior personalización -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html" id="img-nav">
+                <img src="../multimedia/images/arciles.png" alt="Imagen de un caballo de fantasía">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
                         Home
                     </a>
-                </li>
-                <li>
-                    <a href="services.html">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">
                         Services
                     </a>
-                </li>
-                <li>
-                    <a href="aboutus.html">
-                        About us
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">
+                        About Us
                     </a>
-                </li>
-                <li>
-                    <a href="contactus.html">
-                        Contact us
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">
+                        Contact Us
                     </a>
-                </li>
-                <li>
-                    <a href="portfolio.html">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">
                         Portfolio
                     </a>
-                </li>
-            </ul>
-            
-            <input type="search" name="" id="" placeholder="Search">
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
         </nav>
     </section>
 </header>
@@ -64,14 +76,26 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- link de bootstrap Js-->
 
 <footer>
-    <section id="footer">
-        <img src="../multimedia/images/pngwing.com.png" alt="foto de exágonos dispersados">
-
+    <section class="footer"> <!-- apertura del section con su correspondiente clase para su posterior personalización -->
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="../multimedia/images/share.png" alt="símbolo de compartir">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../multimedia/images/linkedin.png" alt="símbolo de Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../multimedia/images/instagram.png" alt="símbolo de Instagram">
+                </a>
+            </li>
+        </ul>
     </section>
-
 </footer>
-    
-    
 
 </body>
 </html>

@@ -20,41 +20,53 @@
     
 
 <header> <!-- apertura del encabezado de la página-->
-    <section id="fotoh1"> <!-- apertura de la primera sección con un id para poder personalizar el contenido con CSS -->
+    <section class="fotoh1"> <!-- apertura de la primera sección con un id para poder personalizar el contenido con CSS -->
         <img src="multimedia/images/Screenshot_58.png" alt="foto de fondo con humo de colores"> <!-- inserté una imágen con su respectiva dirección y le puse la descripción correspondiente -->
+        
     </section>
-    <section id="linksh1"> <!-- hice la apertura de la sección que contendrá los links y lo identifiqué con su id correspondiente para su posterior personalización -->
-        <nav> <!-- abrí la etiqueta nav para que me permita navegar entre los links -->
-            <ul> <!-- apertura de una lista desordenada -->
-                <li> <!-- apertura de item de la lista -->
-                    <a href="index.html"> <!-- coloqué los links con sus correspondientes nombres y llamados a cada carpeta específica -->
+    <section class="nav-container"> <!-- hice la apertura de la sección que contendrá los links y lo identifiqué con su id correspondiente para su posterior personalización -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html" id="img-nav">
+                <img src="./multimedia/images/arciles.png" alt="Imagen de un caballo de fantasía">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">
                         Home
                     </a>
-                </li>
-                <li>
-                    <a href="./pages/services.html">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/services.html">
                         Services
                     </a>
-                </li>
-                <li>
-                    <a href="./pages/aboutus.html">
-                        About us
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/aboutus.html">
+                        About Us
                     </a>
-                </li>
-                <li>
-                    <a href="./pages/contactus.html">
-                        Contact us
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contactus.html">
+                        Contact Us
                     </a>
-                </li>
-                <li>
-                    <a href="./pages/portfolio.html">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/portfolio.html">
                         Portfolio
                     </a>
-                </li>
-            </ul>
-
-            <input type="search" name="" id="" placeholder="Search"> <!-- coloqué el input de búsqueda, que en un futuro reemplazaré-->
-
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
         </nav>
     </section>
 </header>
@@ -65,8 +77,8 @@
         <h1> Home </h1> <!-- declaro el título principal de la página -->
     </section>
 
-    <section id="video1"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/P90X9xxm1gc?si=Vakd7xHYYwN_QoDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--
+    <section class="video1"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
+        <iframe src="https://www.youtube.com/embed/P90X9xxm1gc?si=Vakd7xHYYwN_QoDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--
             inserté el iframe obtenido de la página de youtube correspondiente al video que se muestra -->
         <article>
             <p>
@@ -78,53 +90,76 @@
                 saepe. Molestias impedit id vero porro?
                 lorem*2000
             </p>
-        </article>    
+        </article>      
+    </section>
+    
+    <section class="tarjetas-container">
+        <section id="hojas"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
+            <div class="card" style="width: 18rem;">
+                <img src="multimedia/images/hojas.png" class="card-img-top" alt="foto de hojas de una planta">
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque qui dicta dolores. Adipisci veritatis incidunt, iste excepturi, 
+                    maiores temporibus fuga maxime dolorum dolore veniam unde distinctio eligendi suscipit 
+                    minus commodi.
+                  </p>
+                </div>
+            </div>
+        </section>
         
-    </section>
-    
-    <section id="hojas"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
-        <img src="multimedia/images/hojas.png" alt="foto de hojas de plantas"> <!-- inserté una imágen con su respectiva dirección y le puse la descripción correspondiente -->
-        <article>
-            <p> <!-- apertura de párrafo para insertar Lorem -->
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Itaque qui dicta dolores. Adipisci veritatis incidunt, iste excepturi, 
-                maiores temporibus fuga maxime dolorum dolore veniam unde distinctio eligendi suscipit 
-                minus commodi.
-            </p>
-        </article>
-    </section>
-    
-    <section id="clock"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
-        <img src="multimedia/images/Clock.png" alt="foto de reloj temporizado"> <!-- inserté una imágen con su respectiva dirección y le puse la descripción correspondiente -->
-        <article>
-            <p> <!-- apertura de párrafo para insertar Lorem -->
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptatibus vitae consequuntur hic quo cupiditate neque nemo tempora delectus nostrum, 
-                mollitia minima at, earum nisi libero quisquam soluta temporibus nam saepe?
-            </p>
-        </article>
-    </section>
-    
-    <section id="piggy"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
-        <img src="multimedia/images/piggy_bank.png" alt="alcancía de cerdito"> <!-- inserté una imágen con su respectiva dirección y le puse la descripción correspondiente -->
-        <article>
-            <p> <!-- apertura de párrafo para insertar Lorem -->
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatibus vitae consequuntur hic quo cupiditate neque nemo tempora delectus nostrum, 
-                    mollitia minima at, earum nisi libero quisquam soluta temporibus nam saepe?
-            </p>
-        </article>
+        <section id="clock"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
+            <div class="card" style="width: 18rem;">
+                <img src="multimedia/images/Clock.png" class="card-img-top" alt="foto de reloj temporizado">
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque qui dicta dolores. Adipisci veritatis incidunt, iste excepturi, 
+                    maiores temporibus fuga maxime dolorum dolore veniam unde distinctio eligendi suscipit 
+                    minus commodi.
+                  </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="piggy"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
+            <div class="card" style="width: 18rem;">
+                <img src="multimedia/images/piggy_bank.png" class="card-img-top" alt="alcancía de cerdito">
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque qui dicta dolores. Adipisci veritatis incidunt, iste excepturi, 
+                    maiores temporibus fuga maxime dolorum dolore veniam unde distinctio eligendi suscipit 
+                    minus commodi.
+                  </p>
+                </div>
+            </div>
+        </section>
     </section>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- link de bootstrap Js-->
 
 <footer> <!-- abrí la etiqueta para todo el contenido que va en el pie de página -->
-    <section id="footer"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
-        <img src="multimedia/images/pngwing.com.png" alt="foto de exágonos dispersados"> <!-- inserté una imágen con su respectiva dirección y le puse la descripción correspondiente -->
-
+    <section class="footer"> <!-- apertura del section con su correspondiente clase para su posterior personalización -->
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="./multimedia/images/share.png" alt="símbolo de compartir">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./multimedia/images/linkedin.png" alt="símbolo de Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./multimedia/images/instagram.png" alt="símbolo de Instagram">
+                </a>
+            </li>
+        </ul>
     </section>
-
 </footer>
 
 </body>

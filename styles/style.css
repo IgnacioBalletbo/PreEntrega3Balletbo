@@ -6,6 +6,8 @@
 
 */
 
+
+
 /* acá edito el color del fondo de las páginas */
 #fondo {
     background-color: rgb(49, 21, 127);
@@ -13,143 +15,168 @@
 }
 
 /* acá edito la posición, el ancho y el alto de la foto de la cabecera de la página */
-#fotoh1 img {
-    position: absolute;
+.fotoh1 img {
+    display: flex;
     top: 0px;
-    left: 0px;
-    width: 1262px;
+    width: 100%;
     height: 220px;
 }
 
-/* acá edito la barra en la que se encuentran los links, su ancho, largo, alto, posición y color */
-#linksh1 {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    width: 1220px;
-    height: 50px;
+.container-fluid {
     background-color: rgba(76, 23, 234, 0.815);
-}
-
-/* acá edito el casillero de búsqueda, su largo, posición con respecto a la barra donde está ubicado y cercanía con respecto de los links */
-#linksh1 input {
-    width: 130px;
-    margin-left: 200px;
-    margin-top: 15px;
+    padding: 0px;
     
 }
 
-/* acá edito los links, su posición, tamaño de la fuente, fuente y color */
-#linksh1 a {
+.nav-container nav {
+    padding: 0;
+}
+
+.nav-container a {
     font-family: "Montagu Slab", serif;
-    font-size: 24px; 
-    padding-left: 80px; 
-    color: rgb(22, 239, 254); 
-    text-decoration: none;
-        
+    color: rgb(22, 239, 254);
+    text-decoration: none;   
+}
+
+.nav-container button {
+    color: rgb(22, 239, 254);
+    font-family: "Montagu Slab", serif;
+}
+
+.nav-container button:hover {
+    color: rgb(22, 239, 254);
+    background-color: #046b7251;
+}
+
+.nav-container :placeholder-shown {
+    font-family: "Montagu Slab", serif;
+}
+
+#img-nav img {
+    display: flex;
+    height: 50px;
 }
 
 /* acá edito la posición del video de la página principal con respecto a los límites de la misma */
-#video1 iframe {
-    position: absolute;
-    left: 50px;
-    top: 350px;
-    right: 400px;
+.video1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.video1 iframe {
+    display: flex;
+    height: 400px;
+    width: 60%;
+    padding: 10px;
+}
+
+.video1 article {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /* acá edito el texto que se ubica a un costado el video, su posición, color, largo, ancho, alto y medida de la fuente */
-#video1 p {
-    position: absolute;
+.video1 p {
+    display: flex;
     color: white;
-    font-size: 20px;
-    left: 700px;
-    top: 400px;
-    right: 20px;
+    font-family: "Montagu Slab", serif;
+    margin: 0;
+    width: 300px;
     
 }
 
-/* acá edito la imágen de las hojas, su posición, altura y ancho */
-#hojas img {
-    position: absolute;
-    top: 800px;
-    left: 65px;
-    width: 220px;
-    height: 220px;
+.tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding-bottom: 50px;
 }
 
-/* acá edito el texto debajo de la imágen de las hojas, su color, posición, altura, ancho y medida de fuente del mismo */
-#hojas p {
-    position: absolute;
+.tarjetas-container p {
+    font-family: "Montagu Slab", serif;
     color: white;
-    font-size: 15px;
-    left: 50px;
-    top: 1050px;
-    right: 950px;
 }
 
-/* acá edito la imágen del reloj, posición, alto y ancho */
-#clock img {
-    position: absolute;
-    top: 800px;
-    left: 500px;
-    width: 220px;
-    height: 220px;
+.tarjetas-container div {
+    background-color: rgb(109, 22, 191);
+    border-color: black;
 }
 
-/* acá edito el texto debajo de la imágen del reloj, su color, posición, altura, ancho y tamaño de la fuente */
-#clock p {
-    position: absolute;
-    color: white;
-    font-size: 15px;
-    left: 500px;
-    top: 1050px;
-    right: 480px;
-}
-
-/* acá edito la imágen del cerdito, posición, alto y ancho */
-#piggy img {
-    position: absolute;
-    top: 800px;
-    left: 950px;
-    width: 220px;
-    height: 220px;
-}
-
-/* acá edito el texto debajo de la imágen del cerdito, su color, posición, altura, ancho y tamaño de la fuente */
-#piggy p {
-    position: absolute;
-    color: white;
-    font-size: 15px;
-    left: 950px;
-    top: 1050px;
-    right: 50px;
-}
-
-/* acá edito la imágen del pie de la página, posición, alto y ancho */
-#footer img {
-    position: absolute;
-    top: 1300px;
-    left: 0px;
-    width: 1263px;
-    height: 220px;
+.tarjetas-container img {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 152, 115, 0.671);
 }
 
 /* acá edito el texto de las páginas próximas a configurar, su color, posición, altura, ancho y la fuente */
 #title h1 {
+    display: flex;
     font-family: "Montagu Slab", serif;
-    position: absolute;
     color: white;
-    top: 300px;
-    left: 100px;
-    width: 1000px;
-    height: 500px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
 }
 
-/* acá le saco el bullet a los items de las listas */
-ul {
-    list-style: none;
+/* acá edito la imágen del pie de la página, posición, alto y ancho */
+.footer {
+    display: flex;
+    height: 220px;
+    bottom: 0px;
+    background-image: url(../multimedia/images/pngwing.com.png);
+    justify-content: right;
+
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.formulario {
+    display: flex;
+    background-color: rgb(26, 165, 119);
+    padding: 50px;
+}
+
+.formulario label {
+    font-family: "Montagu Slab", serif;
+    color: rgb(22, 239, 254);
 }
   
-  
+.formulario :placeholder-shown {
+    font-family: "Montagu Slab", serif;
+    color: rgb(22, 239, 254);
+}
 
+.formulario button {
+    color: rgb(22, 239, 254);
+    font-family: "Montagu Slab", serif;
+    background-color: #6b08cf51;
+}
 
+.formulario button:hover {
+    color: rgb(22, 239, 254);
+    background-color: #0bc40551;
+}
