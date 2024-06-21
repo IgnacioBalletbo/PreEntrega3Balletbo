@@ -1,0 +1,26 @@
+/* estilos de Contact Us */
+
+/* estilo del formulario */
+.formulariocontainer {
+    display: flex;
+    background-color: map-get($paleta-de-colores, color-fondo-formulario);
+    padding: 50px;
+    border-radius: 100px;
+    label {
+        font-family: $fuente-letras;
+        color: map-get($paleta-de-colores, color-letras-link);
+    }
+    :placeholder-shown {
+        font-family: $fuente-letras;
+        color: map-get($paleta-de-colores, color-letras-link); 
+    }
+    button {
+        color: map-get($paleta-de-colores, color-letras-link);
+        font-family: $fuente-letras;
+        background-color: #6b08cf51;
+    }
+    button:hover {
+        color: map-get($paleta-de-colores, color-letras-link);
+        background-color: #0bc40551;
+    }
+}

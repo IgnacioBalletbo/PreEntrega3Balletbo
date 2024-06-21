@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala o diseño responsive -->
 
     <!-- Conexión con CSS -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
 
     <!-- conexión con google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap" rel="stylesheet">
@@ -17,17 +17,16 @@
     <title>Home - Rena & Ignacio Page</title> <!-- lo que le da el nombre a la web en la pestaña -->
 </head>
 <body id="fondo"> <!-- le coloqué un id para editar el color del fondo de la página -->
-    
 
-<header> <!-- apertura del encabezado de la página-->
+  <header> <!-- apertura del encabezado de la página-->
     <section class="fotoh1"> <!-- apertura de la primera sección con un id para poder personalizar el contenido con CSS -->
-        <img src="multimedia/images/Screenshot_58.png" alt="foto de fondo con humo de colores"> <!-- inserté una imágen con su respectiva dirección y le puse la descripción correspondiente -->
+        <img src="multimedia/images/screenshot_58.png" alt="foto de fondo con humo de colores"> <!-- inserté una imágen con su respectiva dirección y le puse la descripción correspondiente -->
         
     </section>
     <section class="nav-container"> <!-- hice la apertura de la sección que contendrá los links y lo identifiqué con su id correspondiente para su posterior personalización -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html" id="img-nav">
+              <a class="navbar-brand" href="./index.html" id="img-nav"> <!-- acá hago que la imagen del nav sea clickeable y te lleve a home -->
                 <img src="./multimedia/images/arciles.png" alt="Imagen de un caballo de fantasía">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,17 +68,17 @@
             </div>
         </nav>
     </section>
-</header>
+  </header>
 
-<main> <!-- hice la apertira de la etiqueta del contenido principal de la página -->
+  <main> <!-- hice la apertira de la etiqueta del contenido principal de la página -->
 
     <section id="title"> <!-- acá abro una sección y le pongo su id correspondiente para su edición -->
         <h1> Home </h1> <!-- declaro el título principal de la página -->
     </section>
 
     <section class="video1"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
-        <iframe src="https://www.youtube.com/embed/P90X9xxm1gc?si=Vakd7xHYYwN_QoDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--
-            inserté el iframe obtenido de la página de youtube correspondiente al video que se muestra -->
+        <iframe src="https://www.youtube.com/embed/P90X9xxm1gc?si=Vakd7xHYYwN_QoDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe> <!-- inserté el iframe obtenido de la página de youtube correspondiente al video que se muestra -->
         <article>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -110,7 +109,7 @@
         
         <section id="clock"> <!-- apertura del section con su correspondiente id para su posterior personalización -->
             <div class="card" style="width: 18rem;">
-                <img src="multimedia/images/Clock.png" class="card-img-top" alt="foto de reloj temporizado">
+                <img src="multimedia/images/clock.png" class="card-img-top" alt="foto de reloj temporizado">
                 <div class="card-body">
                   <p class="card-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -136,11 +135,11 @@
             </div>
         </section>
     </section>
-</main>
+  </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- link de bootstrap Js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- link de bootstrap Js-->
 
-<footer> <!-- abrí la etiqueta para todo el contenido que va en el pie de página -->
+  <footer> <!-- abrí la etiqueta para todo el contenido que va en el pie de página -->
     <section class="footer"> <!-- apertura del section con su correspondiente clase para su posterior personalización -->
         <ul>
             <li>
@@ -160,7 +159,7 @@
             </li>
         </ul>
     </section>
-</footer>
+  </footer>
 
 </body>
 </html>

@@ -1,0 +1,7 @@
+
+/* acá edito el color del fondo de las páginas */
+
+#fondo {
+    background-color: map-get($paleta-de-colores, color-fondo-de-la-pagina);
+
+}

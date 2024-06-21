@@ -1,0 +1,32 @@
+/* estilos de los títulos */
+
+/* estilo del h1 */
+#title h1 {
+    display: flex;
+    font-family: $fuente-letras;
+    color: map-get($paleta-de-colores, color-del-texto);
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+}
+
+/* estilo título contact us */
+#titlecontactus {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    h1 {
+        display: flex;
+        font-family: $fuente-letras;
+        color: map-get($paleta-de-colores, color-del-texto);
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        padding: 10px;
+    }
+}

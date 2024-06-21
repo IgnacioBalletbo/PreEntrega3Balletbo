@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* acá edito el color del fondo de las páginas */
+#fondo {
+  background-color: rgb(49, 21, 127);
+}
+
+/* estilos del header */
+/* acá edito la posición, el ancho y el alto de la foto de la cabecera de la página */
+.fotoh1 img {
+  display: flex;
+  top: 0px;
+  width: 100%;
+  height: 220px;
+}
+
+/* estilos del nav */
+.container-fluid {
+  background-color: rgba(76, 23, 234, 0.815);
+  padding: 0px;
+}
+
+#img-nav img {
+  display: flex;
+  height: 50px;
+}
+
+.nav-container nav {
+  padding: 0;
+}
+.nav-container nav button {
+  color: rgb(22, 239, 254);
+  font-family: "Montagu Slab", serif;
+}
+.nav-container nav button:hover {
+  color: rgb(22, 239, 254);
+  background-color: rgba(4, 107, 114, 0.3176470588);
+}
+.nav-container nav a {
+  font-family: "Montagu Slab", serif;
+  color: rgb(22, 239, 254);
+  text-decoration: none;
+}
+.nav-container nav :placeholder-shown {
+  font-family: "Montagu Slab", serif;
+}
+
+/* estilos de los títulos */
+/* estilo del h1 */
+#title h1 {
+  display: flex;
+  font-family: "Montagu Slab", serif;
+  color: white;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+}
+
+/* estilo título contact us */
+#titlecontactus {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#titlecontactus img {
+  height: 100px;
+  width: 100px;
+}
+#titlecontactus h1 {
+  display: flex;
+  font-family: "Montagu Slab", serif;
+  color: white;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+}
+
+/* estilos de la página principal */
+/* estilos del video y el texto */
+.video1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+.video1 iframe {
+  display: flex;
+  height: 400px;
+  width: 60%;
+  padding: 10px;
+}
+.video1 article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.video1 article p {
+  display: flex;
+  color: white;
+  font-family: "Montagu Slab", serif;
+  margin: 0;
+  width: 300px;
+}
+
+/* estilos de las tarjetas */
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+.tarjetas-container img {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 152, 115, 0.671);
+}
+.tarjetas-container div {
+  background-color: rgb(109, 22, 191);
+  border-color: black;
+}
+.tarjetas-container div p {
+  font-family: "Montagu Slab", serif;
+  color: white;
+}
+
+/* estilos de Contact Us */
+/* estilo del formulario */
+.formulariocontainer {
+  display: flex;
+  background-color: rgb(26, 165, 119);
+  padding: 50px;
+  border-radius: 100px;
+}
+.formulariocontainer label {
+  font-family: "Montagu Slab", serif;
+  color: rgb(22, 239, 254);
+}
+.formulariocontainer :placeholder-shown {
+  font-family: "Montagu Slab", serif;
+  color: rgb(22, 239, 254);
+}
+.formulariocontainer button {
+  color: rgb(22, 239, 254);
+  font-family: "Montagu Slab", serif;
+  background-color: rgba(107, 8, 207, 0.3176470588);
+}
+.formulariocontainer button:hover {
+  color: rgb(22, 239, 254);
+  background-color: rgba(11, 196, 5, 0.3176470588);
+}
+
+/* estilos de Services */
+/* estilos del carrusel */
+#carrusel {
+  font-family: "Montagu Slab", serif;
+}
+#carrusel img {
+  height: 510px;
+}
+
+/* estilos del footer */
+.footer {
+  display: flex;
+  height: 220px;
+  bottom: 0px;
+  background-image: url(../multimedia/images/pngwing.com.png);
+  justify-content: right;
+}
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.footer ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.footer ul li img {
+  height: 50px;
+  width: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

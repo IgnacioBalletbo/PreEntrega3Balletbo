@@ -1,0 +1,24 @@
+/* estilos del footer */
+
+.footer {
+    display: flex;
+    height: 220px;
+    bottom: 0px;
+    background-image: url(../multimedia/images/pngwing.com.png);
+    justify-content: right;
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
