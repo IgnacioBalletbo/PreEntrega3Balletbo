@@ -114,7 +114,7 @@
 }
 .tarjetas-container img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   background-color: rgba(12, 152, 115, 0.671);
 }
 .tarjetas-container div {
@@ -159,6 +159,13 @@
 }
 #carrusel img {
   height: 510px;
+}
+#carrusel p {
+  background-color: rgba(0, 255, 255, 0.516);
+}
+
+#contenidocentral p {
+  font-family: "Montagu Slab", serif;
 }
 
 /* estilos del footer */
